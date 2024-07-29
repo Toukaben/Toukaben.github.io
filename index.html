@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Touka</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!-- Liens vers les feuilles de style et les bibliothèques externes -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css"> <!-- Votre fichier CSS personnalisé -->
+</head>
+<body>
+
+  <!-- Conteneur principal -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Barre latérale -->
+      <aside class="col-md-3 sidebar bg-dark text-light py-4 d-flex flex-column align-items-center">
+        <!-- Profil de l'utilisateur -->
+        <div class="profile text-center">
+          <img src="./assets/images/IMG_0874.jpg" alt="Touka Ben HACINE" class="avatar">
+          <h2 class="name">Touka Ben HACINE</H1></h2>
+          <p class="title">Designer UI</p>
+        </div>
+        <!-- Bouton "Voir plus" pour les petits écrans -->
+        <div class="d-md-none w-100">
+          <button id="toggleSidebar" class="btn btn-gold btn-block mt-3">Voir plus</button>
+        </div>
+        <!-- Liens sociaux et informations supplémentaires -->
+        <div class="d-none d-md-block w-100">
+          <nav class="social-links">
+            <!-- Liens sociaux -->
+            <a href="mailto:rachad@example.com" class="social-link email">benhacinetouka8@gmail.com</a>
+            <a href="tel:+12133522795" class="social-link phone">+33 6 63 66 19 89</a>
+            <p>Ile de France, FRANCE</p>
+            <!-- Icônes sociales -->
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </nav>
+        </div>
+        <!-- Contenu supplémentaire masqué par défaut -->
+        <div class="additional-content d-none" id="additionalContent">
+          <!-- Informations supplémentaires -->
+          <nav class="social-links">
+            <a href="mailto:benhacinetouka8@gmail.com" class="social-link email">benhacinetouka8@gmail.com</a>
+            <a href="tel:+33663661989" class="social-link phone">+33 6 63 66 19 89</a>
+            <p>Ile de France, FRANCE</p>
+            <!-- Icônes sociales -->
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Contenu principal -->
+      <main class="col-md-9 content py-4">
+        <!-- Onglets de navigation -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">À propos de moi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="doing-tab" data-toggle="tab" href="#doing" role="tab" aria-controls="doing" aria-selected="false">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="testimonials-tab" data-toggle="tab" href="#testimonials" role="tab" aria-controls="testimonials" aria-selected="false">Témoignages</a>
+          </li>
+        </ul>
+        <!-- Contenu des onglets -->
+        <div class="tab-content" id="myTabContent">
+          <!-- Onglet "À propos de moi" -->
+          <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Titre de la section "À propos de moi" -->
+                    <h2 class="section-title">À propos de moi<span class="accent-line"></span></h2>
+                    <!-- Texte de la section "À propos de moi" -->
+                    <p class="section-text">Je suis une conceptrice designer UI passionnée, concrétisant enfin mon rêve de créer ma propre marque. Depuis toujours, le design a été au cœur de mes intérêts, et aujourd'hui, je mets cette passion en pratique. J'ai développé des compétences solides dans la création de flyers, de cartes de visite, de sites vitrines, ainsi que dans la gestion de l'image d'un restaurant.</p>
+                    <p class="section-text">Mon parcours m'a permis de me perfectionner dans la conception de designs attrayants et fonctionnels qui reflètent fidèlement l'identité visuelle d'une marque. Que ce soit pour élaborer des menus, créer des pages Instagram engageantes ou réaliser des publicités via des flyers, je me spécialise dans la mise en valeur des offres culinaires et de l'ambiance unique de chaque établissement.</p>
+                    <p class="section-text">Toujours à l'affût des dernières tendances en design et des meilleures pratiques de l'industrie, je propose des solutions innovantes et modernes pour promouvoir l'image et les offres d'un restaurant. Mon objectif est de créer des designs captivants, inspirant la confiance et incitant les clients à découvrir les délices culinaires proposés.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Titre de la section "À propos de moi" -->
+                    <h2 class="section-title">Mes compétences<span class="accent-line"></span></h2>
+                    <!-- Case compétences -->
+                    <div class="competence-container row">
+                      <!-- Logo de compétence -->
+                      <div class="competence col-md-2">
+                        <img src="assets/images/wordpress.png" alt="wordpress">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/ai.webp" alt="ai">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/photoshop (1).png" alt="ps">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/pr.png" alt="pr">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/canva.png" alt="canva">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/figma.svg" alt="figma">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/html.png" alt="html">
+                      </div>
+                      <div class="competence col-md-2">
+                        <img src="assets/images/css.png" alt="css">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          <!-- Formations -->
+          <div class="tab-pane fade" id="doing" role="tabpanel" aria-labelledby="doing-tab">
+            <!-- Contenu de la section "formation" -->
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Case compétences -->
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2024</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Licence de Designer UI</div>
+                      </div>
+                    </div>
+                    <div class="experience row">
+                      <div class="col-auto">
+                        <div class="date">2023</div>
+                      </div>
+                      <div class="col">
+                        <div class="experience-description">Baccalauréat Général, spécialité Mathématiques et SES</div>
+                      </div>
+                    </div>
+                    <!-- Ajoutez d'autres expériences ici -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- experiences -->
+          <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="about-me">
+                    <!-- Case compétences -->
+                    <div class="experience row">
+                      <div class="col-md-3">
+                        <div class="date">En cours</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="experience-description">Lancement de ma marque de produit Naturelle pour les cheveux et le visage que je réalise moi-même.</div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="experience-description">Sumsum, <br>France </div>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="https://4.examlabelecole.fr/"><img src="assets/images/logo.png" alt="Layali" class="img-fluid experience-description"></a>
+                      </div>
+                    </div>
+                                      
+                    <p style="color: beige;">Cliquez sur les logos pour accéder aux sites.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio -->
+          <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+            <p style="color: beige;">Cliquez sur les photos pour en voir plus.</p>
+
+            <div class="container">
+              <h2 style="text-decoration:underline;margin-bottom: 3%;">Sumsum</h2>
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal5">
+                    <img style="width: 80%; height: auto;" src="assets/images/logo.png" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal6">
+                    <img src="assets/images/vitre.png" class="img-fluid" alt="site WP">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal7">
+                    <img src="assets/images/Capture d’écran 2024-07-30 à 00.17.09.png" class="img-fluid" alt="insta">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal8">
+                    <img style="width: 80%; height: auto;" src="assets/images/shampoing.png" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal9">
+                    <img style="width: 80%; height: auto;" src="assets/images/visitee.png" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal10">
+                    <img style="width: 80%; height: auto;" src="assets/images/CONSEIL.jpg" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal11">
+                    <img style="width: 80%; height: auto;" src="assets/images/Crème de nuit.png" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a href="#" data-toggle="modal" data-target="#imageModal12">
+                    <img style="width: 80%; height: auto;" src="assets/images/sac sumsoum.jpg" class="img-fluid" alt="flyerd">
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModal5Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal5Label">Logo Sumsum</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="site WP LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModal6Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal6Label">Vitrine Sumsum</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/vitre.png" class="img-fluid" alt="site WP LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal7" tabindex="-1" role="dialog" aria-labelledby="imageModal7Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a href="https://www.figma.com/proto/A9vHydumHwK7YRnmnRn8Uu/TOUKA-SUMSOUM?node-id=111-656&starting-point-node-id=111%3A656"><h5 class="modal-title" id="imageModal7Label">Cliquer pour voir maquette SUMSOUM sur Figma</h5></a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/Capture d’écran 2024-07-30 à 00.17.09.png" class="img-fluid" alt="site WP LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal8" tabindex="-1" role="dialog" aria-labelledby="imageModal8Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal8Label">Shampoing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/shampoing.png" class="img-fluid" alt="Logo LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal9" tabindex="-1" role="dialog" aria-labelledby="imageModal9Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal9Label">Carte de visite</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/visitee.png" class="img-fluid" alt="Mockup">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal10" tabindex="-1" role="dialog" aria-labelledby="imageModal10Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal10Label">Tablier Conseiller de vente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/CONSEIL.jpg" class="img-fluid" alt="Mockup">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal11" tabindex="-1" role="dialog" aria-labelledby="imageModal11Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal11Label">Crème de nuit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/Crème de nuit.png" class="img-fluid" alt="Logo LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="imageModal12" tabindex="-1" role="dialog" aria-labelledby="imageModal12Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal12Label">Sac Sumsoum</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/images/sac sumsoum.jpg" class="img-fluid" alt="Magazine LAYALI">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+                               
+          <div class="tab-pane fade" id="testimonials" role="tabpanel" aria-labelledby="testimonials-tab">
+            <div class="testimonial">
+                <img src="assets/images/avatar-4.png" alt="Photo témoignage 1">
+                <p class="temoignage">Camarade de classe:<br>"Touka a été une source constante d'inspiration tout au long de l'année. Sa détermination et son engagement à donner un sens à sa marque étaient évidents à chaque étape du parcours. Qu'il s'agisse de développer des concepts innovants ou de peaufiner les moindres détails, Touka a toujours travaillé avec passion et persévérance. Son dévouement à créer une identité forte et cohérente pour sa marque est vraiment remarquable. Travailler à ses côtés a été une expérience enrichissante, et je suis certain que son avenir dans le design sera brillant."</p>
+            </div>
+        </div>
+        
+        </div>
+      </main>
+      
+    </div>
+  </div>
+
+  <!-- Scripts JavaScript -->
+  <script>
+    // Sélectionner le bouton "Voir plus" et le contenu supplémentaire
+    const toggleBtn = document.getElementById('toggleSidebar');
+    const additionalContent = document.getElementById('additionalContent');
+  
+    // Ajouter un gestionnaire d'événement au clic sur le bouton "Voir plus"
+    toggleBtn.addEventListener('click', function() {
+      // Basculer la classe pour afficher ou masquer le contenu supplémentaire
+      additionalContent.classList.toggle('d-none');
+      // Changer le texte du bouton en fonction de l'état de la sidebar
+      if (additionalContent.classList.contains('d-none')) {
+        toggleBtn.textContent = "Voir plus";
+      } else {
+        toggleBtn.textContent = "Voir moins";
+      }
+    });
+  </script>
+
+  <!-- Liens vers les bibliothèques JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
